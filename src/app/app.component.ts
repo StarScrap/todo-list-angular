@@ -32,8 +32,8 @@ export class AppComponent {
   constructor() {
     setTimeout(() => {
       this.config = {
-        title: 'Lista zadań',
-        footer: '© Lista zadań zbudowana w Angularze.',
+        title: 'Task list',
+        footer: '© Task list built in Angular.',
         date: new Date().toDateString(),
       };
     }, 500);

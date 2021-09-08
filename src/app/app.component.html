@@ -8,10 +8,10 @@
   <div class="row">
     <ng-container *ngIf="editMode; then editOn; else editOff"></ng-container>
     <ng-template #editOff>
-    <button class="btn col s2 offset-s10" (click)="switchEditMode()">Dodaj zadanie</button>
+    <button class="btn col s2 offset-s10" (click)="switchEditMode()">Add task</button>
     </ng-template>
     <ng-template #editOn>
-    <button class="btn col s2 offset-s10" (click)="switchEditMode()">Zakończ</button>
+    <button class="btn col s2 offset-s10" (click)="switchEditMode()">Complete</button>
     </ng-template>
   </div>
 
@@ -57,7 +57,7 @@
   </ul>
 
   <ng-template #noTasks>
-    <h1>Dzisiaj brak zadań :-)</h1>
+    <h1>No tasks today :-)</h1>
   </ng-template>
     
 
@@ -66,7 +66,7 @@
     (click)="clearTasks()"
     [disabled]="tasks.length === 0"
   >
-    Wyczyść
+    Clean
   </button>
 
   <footer class="page-footer mt-5">
